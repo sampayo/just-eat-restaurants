@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RestaurantsViewController : UIViewController
-
+@property (nonatomic,strong) NSMutableArray *datasource;
+@property (nonatomic,weak) IBOutlet UITableView *tableView;
 @end

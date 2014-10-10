@@ -14,6 +14,10 @@
 		3C774D1E19E80089008D93B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C774D1D19E80089008D93B8 /* Images.xcassets */; };
 		3C774D2119E80089008D93B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C774D1F19E80089008D93B8 /* LaunchScreen.xib */; };
 		3C774D2D19E80089008D93B8 /* IntelligentposTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C774D2C19E80089008D93B8 /* IntelligentposTestTests.m */; };
+		3C774D3A19E800FC008D93B8 /* Restaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C774D3919E800FC008D93B8 /* Restaurant.m */; };
+		3C774D3E19E8065F008D93B8 /* RequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C774D3D19E8065F008D93B8 /* RequestHelper.m */; };
+		3C774D4219E810C2008D93B8 /* RestaurantsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C774D4119E810C2008D93B8 /* RestaurantsViewController.m */; };
+		3C774D4519E810D8008D93B8 /* RestaurantTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C774D4419E810D8008D93B8 /* RestaurantTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		3C774D2619E80089008D93B8 /* IntelligentposTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelligentposTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C774D2B19E80089008D93B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C774D2C19E80089008D93B8 /* IntelligentposTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntelligentposTestTests.m; sourceTree = "<group>"; };
+		3C774D3819E800FC008D93B8 /* Restaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Restaurant.h; sourceTree = "<group>"; };
+		3C774D3919E800FC008D93B8 /* Restaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Restaurant.m; sourceTree = "<group>"; };
+		3C774D3C19E8065F008D93B8 /* RequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHelper.h; sourceTree = "<group>"; };
+		3C774D3D19E8065F008D93B8 /* RequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHelper.m; sourceTree = "<group>"; };
+		3C774D4019E810C2008D93B8 /* RestaurantsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantsViewController.h; sourceTree = "<group>"; };
+		3C774D4119E810C2008D93B8 /* RestaurantsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantsViewController.m; sourceTree = "<group>"; };
+		3C774D4319E810D8008D93B8 /* RestaurantTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestaurantTableViewCell.h; sourceTree = "<group>"; };
+		3C774D4419E810D8008D93B8 /* RestaurantTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestaurantTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +95,12 @@
 			children = (
 				3C774D1419E80089008D93B8 /* AppDelegate.h */,
 				3C774D1519E80089008D93B8 /* AppDelegate.m */,
-				3C774D1719E80089008D93B8 /* ViewController.h */,
-				3C774D1819E80089008D93B8 /* ViewController.m */,
-				3C774D1A19E80089008D93B8 /* Main.storyboard */,
+				3C774D3B19E801AD008D93B8 /* Models */,
+				3C774D3719E800D7008D93B8 /* Controller */,
+				3C774D3619E800CD008D93B8 /* View */,
 				3C774D1D19E80089008D93B8 /* Images.xcassets */,
-				3C774D1F19E80089008D93B8 /* LaunchScreen.xib */,
 				3C774D1019E80089008D93B8 /* Supporting Files */,
+				3C774D3F19E80665008D93B8 /* Helper */,
 			);
 			path = IntelligentposTest;
 			sourceTree = "<group>";
@@ -117,6 +129,54 @@
 				3C774D2B19E80089008D93B8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C774D3619E800CD008D93B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C774D1A19E80089008D93B8 /* Main.storyboard */,
+				3C774D1F19E80089008D93B8 /* LaunchScreen.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3C774D3719E800D7008D93B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3C774D1719E80089008D93B8 /* ViewController.h */,
+				3C774D1819E80089008D93B8 /* ViewController.m */,
+				3C774D4019E810C2008D93B8 /* RestaurantsViewController.h */,
+				3C774D4119E810C2008D93B8 /* RestaurantsViewController.m */,
+				3C774D4619E810DC008D93B8 /* Cell */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3C774D3B19E801AD008D93B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C774D3819E800FC008D93B8 /* Restaurant.h */,
+				3C774D3919E800FC008D93B8 /* Restaurant.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3C774D3F19E80665008D93B8 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3C774D3C19E8065F008D93B8 /* RequestHelper.h */,
+				3C774D3D19E8065F008D93B8 /* RequestHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		3C774D4619E810DC008D93B8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3C774D4319E810D8008D93B8 /* RestaurantTableViewCell.h */,
+				3C774D4419E810D8008D93B8 /* RestaurantTableViewCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C774D3A19E800FC008D93B8 /* Restaurant.m in Sources */,
+				3C774D3E19E8065F008D93B8 /* RequestHelper.m in Sources */,
+				3C774D4519E810D8008D93B8 /* RestaurantTableViewCell.m in Sources */,
 				3C774D1919E80089008D93B8 /* ViewController.m in Sources */,
+				3C774D4219E810C2008D93B8 /* RestaurantsViewController.m in Sources */,
 				3C774D1619E80089008D93B8 /* AppDelegate.m in Sources */,
 				3C774D1319E80089008D93B8 /* main.m in Sources */,
 			);

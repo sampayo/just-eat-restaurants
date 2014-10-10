@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface RestaurantTableViewCell : UITableViewCell
+@property (weak,nonatomic) IBOutlet UIImageView  *imageRestaurant;
+@property (weak,nonatomic) IBOutlet UILabel      *nameRestaurant;
+@property (weak,nonatomic) IBOutlet UILabel      *rateRestaurant;
 
 @end
