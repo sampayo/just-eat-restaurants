@@ -4,4 +4,4 @@
  * Name
  * Average rating
  * Restaurant logo
-* The restaurants should be ordered from highest average rating to lowest average rating 
+* The restaurants should be ordered from highest average rating to lowest average rating. 
